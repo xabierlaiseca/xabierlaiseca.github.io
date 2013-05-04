@@ -31,8 +31,10 @@
 			</div>
 		</nav>
 		
-		{% include header.html %}
-
+		<header class="hero-unit">
+			<h1>{{ page.header.title }}</h1>
+			<p>{{ page.header.explanation }}</p>
+		</header>
 		<!-- MAIN CONTENT -->
 		<div class="container" >
 			{{ content }}			
