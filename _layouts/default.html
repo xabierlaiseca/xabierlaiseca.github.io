@@ -5,11 +5,12 @@
 		<meta charset='utf-8' />
 		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 		<meta name="author" content="Xabier Laiseca" />
-		<meta name="description" content="Xabier Laiseca : Biography" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Xabier Laiseca : {{ page.header_title }}" />
 
-		<link href="/assets/css/bootstrap.min.css" media="screen" rel="stylesheet"></link>
-		<link href="/assets/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet"></link>
-		<link href="/assets/css/main.css" media="screen" rel="stylesheet"></link>
+		<link href="/assets/css/bootstrap.min.css" media="screen" rel="stylesheet" />
+		<link href="/assets/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" />
+		<link href="/assets/css/main.css" media="screen" rel="stylesheet" />
 
 		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 
@@ -18,34 +19,38 @@
 
 	<body>
 		
-		<nav class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="brand" href="/">Xabier Laiseca</a>
-					<ul class="nav">
-						<li ><a href="#">Publications</a></li>
-						<li ><a href="#">R&D projects</a></li>
-						<li ><a href="/">About</a></li>
-					</ul>
+		<div id="wrap">
+			<nav class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="brand" href="/">Xabier Laiseca</a>
+						<ul class="nav">
+							<li ><a href="/">Biography</a></li>
+							<li ><a href="#">Publications</a></li>
+							<li ><a href="#">R&D projects</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<div id="content" class="container" >
+				<header class="hero-unit">
+					<h1>{{ page.header_title }}</h1>
+					<p class="lead"><em>{{ page.header_explanation }}</em></p>
+				</header>
+				<div class="span9 offset1">
+					{{ content }}			
 				</div>
 			</div>
-		</nav>
-		
-		<div class="container" >
-			<header class="hero-unit">
-				<h1>{{ page.header_title }}</h1>
-				<p>{{ page.header_explanation }}</p>
-			</header>
-			{{ content }}			
 		</div>
 
-		<!-- FOOTER  -->
-		<div id="footer_wrap" class="outer">
-			<footer class="inner">
-				<p>
-					Published with <a href="http://pages.github.com">GitHub Pages</a>
+		<div id="footer">
+			<div class="container">
+				<p class="muted credit">
+					Published with <a href="http://pages.github.com">GitHub Pages</a> | Powered by <a href="http://twitter.github.io/bootstrap/" >Bootstrap</a>
+					and <a href="http://jekyllrb.com/">Jekyll</a>.
 				</p>
-			</footer>
+			</div>
 		</div>
 
 	</body>
