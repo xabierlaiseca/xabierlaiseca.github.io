@@ -25,9 +25,9 @@
 					<div class="container">
 						<a class="brand" href="/">Xabier Laiseca</a>
 						<ul class="nav">
-							<li ><a href="/">Biography</a></li>
-							<li ><a href="#">Publications</a></li>
-							<li ><a href="#">R&D projects</a></li>
+							<li {% if page.header_title == "Biography" %} class="active" {% endif %} ><a href="/">Biography</a></li>
+							<li {% if page.header_title == "Projects" %} class="active" {% endif %} ><a href="#">Projects</a></li>
+							<li {% if page.header_title == "Publications" %} class="active" {% endif %} ><a href="#">Publications</a></li>
 						</ul>
 					</div>
 				</div>
