@@ -30,6 +30,19 @@ body {
 	color: grey;
 }
 
+#publications .accordion-heading {
+	font-size: large;
+	color: grey;
+}
+
+#publications .accordion-toggle i {
+	float: right;
+}
+
+.download-link {
+	float: right;
+}
+
 #photo {
 	float: right;
 	width: 20%;

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Xabier Laiseca
+header_title: Publications
+header_explanation: That's my small contribution to Science :-)
+---
+
+<section>
+	<div id="publications" class="accordion">
+		{% for post in site.posts %}
+			{% if post.category == 'publications' %}
+				{% capture year %}{{ post.date | date:"%Y" }}{% endcapture %}
+				{% if old_year != year %}
+			    	<h2>{{ year }}</h2>
+			    {% endif %}
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<div class="accordion-toggle" data-toggle="collapse" data-parent="#publications" href="#collapse{{ forloop.index }}">
+							{{ post.title }}<i class="icon-plus"></i>
+						</div>
+					</div>
+					<div id="collapse{{ forloop.index }}" class="accordion-body collapse" >
+						<div class="accordion-inner">
+							<p>{{ post.authors }}. <em>{{ post.title }}</em>. {{ post.more_info }}</p>
+							<p>{{ post.content }}</p>
+							<div class="download-link"><a href="{{ post.link }}"><i class="icon-download" ></i></a></div>
+							<p>Keywords: {{ post.keywords }}</p>
+						</div>
+					</div>
+				</div>
+				{% capture old_year %}{{ post.date | date:"%Y" }}{% endcapture %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</section>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.accordion').on('show hide', function(e){
+			$(e.target).siblings('.accordion-heading').find('.accordion-toggle i').toggleClass('icon-plus icon-minus', 200);
+		});
+	});
+</script>
