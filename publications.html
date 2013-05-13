@@ -6,6 +6,7 @@ header_explanation: That's my small contribution to Science :-)
 ---
 
 <section>
+	<div>
 	<div id="publications" class="accordion">
 		{% for post in site.posts %}
 			{% if post.category == 'publications' %}
@@ -31,6 +32,7 @@ header_explanation: That's my small contribution to Science :-)
 				{% capture old_year %}{{ post.date | date:"%Y" }}{% endcapture %}
 			{% endif %}
 		{% endfor %}
+	</div>
 	</div>
 </section>
 
