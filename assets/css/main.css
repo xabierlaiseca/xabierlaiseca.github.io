@@ -25,17 +25,28 @@ body {
   background-color: #f5f5f5;
 }
 
+#text-content {
+	display: inline-block;
+}
+
 #text-content p {
 	font-size: large;
 	color: grey;
 }
 
-#publications .accordion-heading {
+#find-me {
+	font-size: medium;
+	color: grey;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.accordion-heading {
 	font-size: medium;
 	color: grey;
 }
 
-#publications .accordion-toggle i {
+.accordion-toggle i {
 	float: right;
 }
 
