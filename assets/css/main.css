@@ -5,12 +5,16 @@ body {
 }
 
 /* Wrapper for page content to push down footer */
-#wrap {
+body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   /* Negative indent footer by it's height */
   margin: 0 auto -60px;
+}
+
+.hero-unit {
+	margin-top: 60px;
 }
 
 #content {

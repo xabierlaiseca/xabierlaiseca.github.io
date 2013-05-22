@@ -1,32 +1,73 @@
 ---
-layout: default
-title: Xabier Laiseca
-header_title: Biography
-header_explanation: This is who I am!
 ---
+<!DOCTYPE html>
+<html>
 
-<section>
-	<div id="text-content">
-		<img id="photo" src="/images/photo_small.png" />
-		<p>
-			I'm Xabier Laiseca, a Java backend Developer from Bilbao, a small city located in the north of Spain. I studied Software Engineering 
-			BSc and MSc at the <a href="http://www.deusto,es">University of Deusto</a> which gave me the opportunity of being part
-			of the <a href="http://www.morelab.deusto.es" >MORElab</a> research group for almost 7 years.
-		</p>
-		<p>
-			In June 2012, I moved to London where I joined the <a href="http://www.ocadotechnology.com">Ocado Technology</a> team.
-			Since March 2013, I'm part of the <a href="http://www.gamesyscorporate.com">Gamesys</a>'s Payments and Risk development team.
-		</p>
-	</div>
-</section>
+	<head>
+		<meta charset='utf-8' />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta name="author" content="Xabier Laiseca" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Xabier Laiseca : {{ page.header_title }}" />
+		<meta name="keywords" content="Xabier Laiseca, Personal Web, {{ page.header_title }}" />
 
-<div id="find-me">
-		<span >You can find me on:
-			<a href="http://uk.linkedin.com/in/xabierlaiseca">
-				<img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" 
-				height="33" border="0" alt="View Xabier Laiseca's profile on LinkedIn">
-			</a>
-		</span>
-		<span ><a href="https://github.com/xabierlaiseca"><img src="/images/blacktocat-32.png" width="32" height="32" alt="View Xabier Laiseca's profile on GitHub"/></a></span>
-		<span ><a href="https://twitter.com/xabierlaiseca"><img src="/images/twitter.jpg" /></a></span>
-</div>
+		<link href="/assets/css/bootstrap.min.css" media="screen" rel="stylesheet" />
+		<link href="/assets/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" />
+		<link href="/assets/css/main.css" media="screen" rel="stylesheet" />
+		
+		<script type="text/javascript" src="/assets/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-40940945-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		
+		<style>
+            .page {top:0; width:100%; height:100%}
+            #biography {position:absolute; left:0%}
+            #publications {position:absolute; left:100%}
+        </style>
+
+		<title>{{ page.title }}</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="/">Xabier Laiseca</a>
+					<ul id="nav-top" class="nav">
+						<li class="active" ><a href="#biography">Biography</a></li>
+						<!-- <li {% if page.header_title == "Projects" %} class="active" {% endif %} ><a href="#">Projects</a></li> -->
+						<li ><a href="#publications">Publications</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="content" >
+			<div id="biography" class="page"> </div>
+	        <div id="publications" class="page"> </div>
+		</div>
+		
+		<script type="text/javascript" src='/assets/js/jquery.scrollto.js'></script>
+        <script>
+            $('#nav-top li a').click(function(e) {
+                e.preventDefault();
+                $('html,body').scrollTo(this.hash, this.hash);
+                $( '#nav-top' ).children('li').removeClass('active');
+         		$( this ).parent('li').addClass('active');
+            });
+
+            $("#biography").load("biography.html");
+            $("#publications").load("publications.html");
+        </script>
+	</body>
+</html>
