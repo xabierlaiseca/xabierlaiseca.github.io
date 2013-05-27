@@ -1,49 +1,17 @@
----
----
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<meta charset='utf-8' />
-		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-		<meta name="author" content="Xabier Laiseca" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Xabier Laiseca : {{ page.header_title }}" />
-		<meta name="keywords" content="Xabier Laiseca, Personal Web, {{ page.header_title }}" />
-
-		<link href="/assets/css/bootstrap.min.css" media="screen" rel="stylesheet" />
-		<link href="/assets/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" />
-		<link href="/assets/css/main.css" media="screen" rel="stylesheet" />
-		
-		<script type="text/javascript" src="/assets/js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-40940945-1']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-		
-		<style>
-            .page {top:0; width:100%; height:100%}
-            #biography {position:absolute; left:0%}
-            #publications {position:absolute; left:100%}
-        </style>
-
-		<title>Xabier Laiseca</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link href="/assets/css/animate-custom.css" rel="stylesheet" />
+		<link href="/assets/css/main.css" rel="stylesheet" />
 	</head>
-
 	<body>
 		<nav class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand" href="/">Xabier Laiseca</a>
+					<div class="brand visible-desktop" >Xabier Laiseca</div>
 					<ul id="nav-top" class="nav">
 						<li class="active" ><a href="#biography">Biography</a></li>
 						<!-- <li {% if page.header_title == "Projects" %} class="active" {% endif %} ><a href="#">Projects</a></li> -->
@@ -53,21 +21,12 @@
 			</div>
 		</nav>
 		<div id="content" >
-			<div id="biography" class="page"> </div>
-	        <div id="publications" class="page"> </div>
+			<section id="biography" class="current page animated"> </section>
+	        <section id="publications" class="hidden page animated"> </section>
 		</div>
-		
-		<script type="text/javascript" src='/assets/js/jquery.scrollto.js'></script>
-        <script>
-            $('#nav-top li a').click(function(e) {
-                e.preventDefault();
-                $('html,body').scrollTo(this.hash, this.hash);
-                $( '#nav-top' ).children('li').removeClass('active');
-         		$( this ).parent('li').addClass('active');
-            });
-
-            $("#biography").load("biography.html");
-            $("#publications").load("publications.html");
-        </script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/js/application.js"></script>
+		<script type="text/javascript" src="/assets/js/analytics.js"></script>
 	</body>
 </html>
