@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
 		<link href="/assets/css/animate-custom.css" rel="stylesheet" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css" />
+
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css" />
+        <![endif]-->
 		<link href="/assets/css/main.css" rel="stylesheet" />
 	</head>
 	<body>
-		<nav class="navbar navbar-fixed-top">
+		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<div class="brand visible-desktop" >Xabier Laiseca</div>
-					<ul id="nav-top" class="nav">
-						<li class="active" ><a href="#biography">Biography</a></li>
-						<!-- <li {% if page.header_title == "Projects" %} class="active" {% endif %} ><a href="#">Projects</a></li> -->
-						<li ><a href="#publications">Publications</a></li>
-					</ul>
+					<nav>
+						<ul id="nav-top" class="nav">
+							<li class="active" ><a href="#biography">Biography</a></li>
+							<!-- <li {% if page.header_title == "Projects" %} class="active" {% endif %} ><a href="#">Projects</a></li> -->
+							<li ><a href="#publications">Publications</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-		</nav>
+		</div>
 		<div id="content" >
 			<section id="biography" class="current page animated"> </section>
 	        <section id="publications" class="hidden page animated"> </section>
