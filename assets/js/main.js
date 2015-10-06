@@ -50,11 +50,15 @@
 		// Scrolly.
 			$window.load(function() {
 
-				var x = parseInt($('.wrapper').first().css('padding-top')) - 80;
+				$('#nav a, .scrolly').each(function( index ) {
+					var linksTo = $( this ).attr('href');
+					var os = parseInt($('.wrapper:has(' + linksTo + ')').first().css('padding-top')) + 45;
 
-				$('#nav a, .scrolly').scrolly({
-					speed: 1000,
-					offset: x
+					$( this ).scrolly({
+						speed: 1000,
+						offset: os
+					});
+
 				});
 
 			});

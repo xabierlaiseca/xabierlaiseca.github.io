@@ -66,12 +66,12 @@
 
 /* Articles */
 
-	#top .image {
+	#about .image {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-		#top .image img {
+		#about .image img {
 			position: relative;
 			-ms-behavior: url("assets/js/ie/PIE.htc");
 		}
