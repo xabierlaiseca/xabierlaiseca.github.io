@@ -1414,6 +1414,7 @@
 	ul.social {
 		cursor: default;
 		margin: 0;
+		padding-bottom: 5em;
 	}
 
 		ul.social li {
@@ -1429,8 +1430,8 @@
 				-ms-transition: top .2s ease-in-out;
 				transition: top .2s ease-in-out;
 				display: block;
-				width: 48px;
-				height: 48px;
+				width: 64px;
+				height: 64px;
 				border-radius: 6px;
 				top: 0;
 				position: relative;
@@ -1450,14 +1451,14 @@
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
 					display: block;
-					font-size: 26px;
-					height: 48px;
-					line-height: 48px;
+					font-size: 50px;
+					height: 64px;
+					line-height: 64px;
 					text-align: center;
 					outline: 0;
 					overflow: hidden;
 					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
-					width: 48px;
+					width: 64px;
 				}
 
 				ul.social li a.fa-twitter {
@@ -1625,6 +1626,8 @@
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
 				color: #fff;
+				padding-top: 2em;
+				padding-bottom: 2em;
 			}
 
 			.wrapper.style4 form input[type=text],
@@ -1830,7 +1833,7 @@
 		/* Wrappers */
 
 			.wrapper {
-				padding: 4em 0 8em 0;
+				padding: 4em 0 2em 0;
 				text-align: center;
 			}
 
