@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/jquery.circliful.css" />
+		<link rel="stylesheet" href="assets/css/skill-bars.css" />
 	</head>
 	<body>
 
@@ -16,7 +18,7 @@
 				<ul class="container">
 					<li><a href="#about">About me</a></li>
 					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Skills</a></li>
+					<li><a href="#skills">Skills</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -120,7 +122,7 @@
 					<div class="row">
 						<div class="12u 12u(mobile)">
 							<footer>
-								<a href="#portfolio" class="arrow big scrolly"><i class="fa fa-angle-down"></i></a>
+								<a href="#skills" class="arrow big scrolly"><i class="fa fa-angle-down"></i></a>
 							</footer>
 						</div>
 					</div>
@@ -129,65 +131,95 @@
 
 		<!-- Skills -->
 			<div class="wrapper style3">
-				<article id="portfolio">
+				<article id="skills">
 					<header>
 						<h2>And this is what I know</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
 					</header>
 					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-									<h3><a href="#">Magna feugiat</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Veroeros primis</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Lorem ipsum</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Tempus dolore</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-									<h3><a href="#">Feugiat aliquam</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-									<h3><a href="#">Sed amet ornare</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
+						<div class="12u 12u(mobile)">
+							<article class="box style2">
+								<div class="row">
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="90%">
+											<div class="skillbar-title"><span>Java</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">90%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="90%">
+											<div class="skillbar-title"><span>TDD</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">90%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="85%">
+											<div class="skillbar-title"><span>Spring</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">90%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="80%">
+											<div class="skillbar-title"><span>CD/CI</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">80%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="75%">
+											<div class="skillbar-title"><span>Git</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">75%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="75%">
+											<div class="skillbar-title"><span>GNU/Linux</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">75%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix green" data-percent="75%">
+											<div class="skillbar-title"><span>MicroServices</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">75%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix yellow" data-percent="70%">
+											<div class="skillbar-title"><span>Docker</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">70%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix yellow" data-percent="70%">
+											<div class="skillbar-title"><span>Ansible</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">70%</div>
+										</div>
+									</div>
+									<div class="6u 12u(mobile)">
+										<div class="skillbar clearfix orange" data-percent="35%">
+											<div class="skillbar-title"><span>Scala</span></div>
+											<div class="skillbar-bar" ></div>
+											<div class="skill-bar-percent">35%</div>
+										</div>
+									</div>
+								</div>
+							</article>
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button big scrolly">Get in touch with me</a>
+						<a href="#contact" class="arrow big scrolly"><i class="fa fa-angle-down"></i></a>
 					</footer>
 				</article>
 			</div>
+
+
 
 		<!-- Contact -->
 			<div class="wrapper style4">
@@ -270,11 +302,26 @@
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.circliful.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			$( document ).ready(function() {
+        $('.skill').each(function() {
+					$( this ).circliful();
+    		});
+			});
+
+			$('.skillbar').each(function(){
+				$(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},2000);
+			});
+</script>
 
 	</body>
 </html>
