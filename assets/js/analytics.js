@@ -14,7 +14,17 @@ var trackOutboundLink = function(url) {
    });
 }
 
+var trackSectionLink = function(section) {
+  ga('send', 'event', 'section', 'click', section);
+}
+
 $( "a.track" ).click(function() {
-  trackOutboundLink($( this ).attr("href"));
-  return false;
+  var linkHref = $( this ).attr("href");
+  var isLocal = linkHref.startsWith("#");
+  if (isLocal) {
+    trackSectionLink(linkHref);
+  } else {
+    trackOutboundLink(linkHref);
+  }
+  return isLocal;
 });
