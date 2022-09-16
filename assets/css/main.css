@@ -1691,29 +1691,6 @@
 
 /* Articles */
 
-	#about .row {
-		display: flex;
-		flex-direction: row;
-		position: relative;
-	}
-
-	#about .row div {
-		flex-grow: 1;
-		justify-content: center;
-	}
-
-	#about .vertical-center-parent {
-		position: relative;
-	}
-
-	#about .vertical-center-parent .image {
-		margin: 0;
-	  position: absolute;
-	  top: 50%;
-	  -ms-transform: translateY(-50%);
-	  transform: translateY(-50%);
-	}
-
 	#about .image {
 		border-radius: 50%;
 	}
@@ -1895,6 +1872,29 @@
 			#about {
 				text-align: left;
 			}
+
+				#about .row {
+					display: flex;
+					flex-direction: row;
+					position: relative;
+				}
+
+				#about .row div {
+					flex-grow: 1;
+					justify-content: center;
+				}
+
+				#about .vertical-center-parent {
+					position: relative;
+				}
+
+				#about .vertical-center-parent .image {
+					margin: 0;
+				  position: absolute;
+				  top: 50%;
+				  -ms-transform: translateY(-50%);
+				  transform: translateY(-50%);
+				}
 
 				#about .image {
 					width: 20em;
